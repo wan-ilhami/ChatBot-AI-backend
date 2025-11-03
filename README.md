@@ -28,6 +28,11 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
+**Windows:**
+```bash
+venv\Scripts\activate
+```
+
 ### Step 3: Install Dependencies
 
 ```bash
@@ -41,7 +46,6 @@ Add empty file in `app/` folder:
 ```bash
 touch app/__init__.py
 ```
-
 ---
 
 ## Running Tests
