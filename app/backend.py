@@ -205,8 +205,9 @@ class ProductKB:
 # ============================================================================
 
 class OutletsDB:
-    # DB_PATH = "outlets.db"
-    DB_PATH = "/data/outlets.db" if os.path.exists("/data") else ":memory:"
+     
+    DB_PATH = "outlets.db"
+    # DB_PATH = "/data/outlets.db" if os.path.exists("/data") else ":memory:"
 
     @staticmethod
     def init_db():
