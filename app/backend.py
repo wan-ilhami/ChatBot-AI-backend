@@ -6,6 +6,7 @@ from datetime import datetime
 import logging
 import sqlite3
 import re
+import os
 
 # ============================================================================
 # SETUP
@@ -204,7 +205,8 @@ class ProductKB:
 # ============================================================================
 
 class OutletsDB:
-    DB_PATH = "outlets.db"
+    # DB_PATH = "outlets.db"
+    DB_PATH = "/data/outlets.db" if os.path.exists("/data") else ":memory:"
 
     @staticmethod
     def init_db():
